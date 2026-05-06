@@ -1,0 +1,48 @@
+.wrapper {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.botao {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 600ms ease-in, background 200ms ease, transform 200ms ease;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 36px;
+  border-radius: 8px;
+  margin: 32px auto 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.35);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  animation: pulseCta 1.8s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, box-shadow;
+}
+
+.botao:hover {
+  background: #16a34a;
+}
+
+@keyframes pulseCta {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.35);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 6px 28px rgba(34, 197, 94, 0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .botao {
+    animation: none;
+  }
+}

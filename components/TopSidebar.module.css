@@ -1,0 +1,9 @@
+.topsidebar {
+  background: #e11d2b;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: clamp(14px, 2.5vw, 16px);
+  width: 100%;
+}
