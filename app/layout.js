@@ -1,5 +1,5 @@
 import "./globals.css";
-import Analytics from "@/components/Analytics";
+import Analytics, { MetaPixelNoScript } from "@/components/Analytics";
 
 export const metadata = {
   title: "Jornada Donas do Jogo",
@@ -45,9 +45,12 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://scripts.converteai.net" />
         <link rel="dns-prefetch" href="https://images.converteai.net" />
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
+
+        {/* Tags de analytics renderizadas dentro do <head> */}
+        <Analytics />
       </head>
       <body>
-        <Analytics />
+        <MetaPixelNoScript />
         {children}
       </body>
     </html>
