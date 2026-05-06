@@ -1,4 +1,5 @@
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 export const metadata = {
   title: "Jornada Donas do Jogo",
@@ -45,7 +46,10 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://images.converteai.net" />
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }
