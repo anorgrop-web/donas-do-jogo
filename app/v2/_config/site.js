@@ -5,7 +5,7 @@
 // Tempo (em segundos) até o botão de compra aparecer.
 // Trocar pelo momento exato em que o pitch começa na VSL.
 // DICA: para testar rápido durante o desenvolvimento, troque para 5.
-export const DELAY_BOTAO_SEGUNDOS = 1800; // 1800s = 30 minutos
+export const DELAY_BOTAO_SEGUNDOS = 2033; // 33min 53s
 
 // Link do checkout — TROCAR quando estiver pronto
 export const LINK_CHECKOUT = "https://pay.kiwify.com.br/EiJNJj4";
