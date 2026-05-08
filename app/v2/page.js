@@ -10,7 +10,7 @@ export default function HomeV2() {
       <TopSidebar />
       <Hero />
       <VSLPlayer />
-      {/* <CTAButton /> oculto temporariamente — usando o botão do vTurb */}
+      <CTAButton />
       <Footer />
     </>
   );
